@@ -5,21 +5,17 @@
 
 int main(int argc, char *argv[]) {
 	
-	int c ;
-	int cnt=0 ;
+	int a ;
+	int sum=0 ;
+	int i ;
 	
-	printf("input a string : ");
+	printf("input a number : ");
+	scanf("%d", &a);
 	
-	while ( (c = getchar() ) != '\n' )
+	for (i=0; i<=a; i++)
 	{
-		if (c >= '0' && c<= '9')
-		{
-			cnt++;
-		}
+		sum = sum + i;
 	}
-
-	printf("number of digits is %d", cnt);
-		
- 
+ 	printf("sum is %d", sum);
 	return 0;
 }
