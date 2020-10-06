@@ -5,15 +5,21 @@
 
 int main(int argc, char *argv[]) {
 	
-	int a ;
+	int c ;
+	int cnt=0 ;
 	
-	printf("input a number : ");
-	scanf("%d", &a);
+	printf("input a string : ");
 	
-	if (a>0)
-		printf("%d", a);
-	else
-		printf("%d", -a);
-	
+	while ( (c = getchar() ) != '\n' )
+	{
+		if (c >= '0' && c<= '9')
+		{
+			cnt++;
+		}
+	}
+
+	printf("number of digits is %d", cnt);
+		
+ 
 	return 0;
 }
