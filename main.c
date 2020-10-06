@@ -5,17 +5,27 @@
 
 int main(int argc, char *argv[]) {
 	
-	int a ;
-	int sum=0 ;
-	int i ;
+	int ans=50;
+	int input ;
+	int cnt=0 ;
 	
-	printf("input a number : ");
-	scanf("%d", &a);
-	
-	for (i=1; i<=a; i++)
+	do
 	{
-		sum = sum + i;
+	
+		printf("input a number : ");
+		scanf("%i", &input);
+	
+	
+		if (input > ans)
+			printf("too high\n");
+		
+		else if (input < ans)
+			printf("too low\n");
+		
+		cnt++;
 	}
- 	printf("sum is %d", sum);
+	while(input != ans);
+	
+	printf("congratulation! trials : %i ", cnt);
 	return 0;
 }
