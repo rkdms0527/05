@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
 	printf("input a number : ");
 	scanf("%d", &a);
 	
-	for (i=0; i<=a; i++)
+	for (i=1; i<=a; i++)
 	{
 		sum = sum + i;
 	}
